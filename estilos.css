@@ -8,7 +8,6 @@
 body{
     background: white;
     font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
 
 }
 
@@ -30,6 +29,8 @@ body{
 
     header ul{
         display:flex;
+        justify-content: end;
+        align-items: center;
 
  }
 
@@ -45,13 +46,13 @@ body{
         border-radius: 50px;
         width: 800px;
         height: 40px;
-        border-color: black;
+        border: 1px solid gray;
     }
 
     .footer{
         background: ghostwhite;
         border-color: aliceblue;
-
+        padding: 10px 0px
         
     }
         
@@ -74,27 +75,42 @@ body{
         text-decoration: none;
         
     }
+    footer {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
 
-    #lista2 li{
+    footer ul {
+        display: inline-block;
+    }
+
+    footer ul.right {
+        position: absolute;
+        right: 0;
+        margin-left: auto;
+    }
+
+    .lista li{
         display:inline;
         margin: 10px;
-        text-align: left;
            
     }
 
-    .rigth{
-        right: 0px;
-        position: absolute;
-        color: black;
-    }
 
-    button{
+    button {
         border-radius: 50px;
         margin: 10px;
         width: 150px;
         height: 30px;
 
     }
+
+    .box {
+        display: flex;
+        justify-content: space-between;
+      }
+
 
     
 
